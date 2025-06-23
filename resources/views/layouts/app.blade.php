@@ -7,17 +7,28 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>Meeting Dashboard</title>
 
   <!-- Custom fonts for this template -->
   <link href="{{ asset('admin_assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
-      <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('admin_assets/css/sb-admin-2.min.css') }}">
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css' rel='stylesheet' />
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
 
   <!-- Custom styles for this template -->
   <link href="{{ asset('admin_assets/css/sb-admin-2.min.css') }}" rel="stylesheet">
+  <script>
+    const meetings = @json($meetings->map(function($meeting) {
+        return [
+            'title' => $meeting->meeting_title . ' - ' . $meeting->organized_by,
+            'start' => $meeting->meeting_time,
+            'location' => $meeting->meeting_location
+        ];
+    }));
+</script>
 </head>
 <body id="page-top">
 
@@ -38,18 +49,7 @@
         @include('layouts.navbar')
         <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">@yield('title')</h1>
-          </div>
-
-          @yield('contents')
-
-        </div>
-        <!-- /.container-fluid -->
+      @yield('contents');
 
       </div>
       <!-- End of Main Content -->
@@ -75,6 +75,5 @@
   <script src="{{ asset('admin_assets/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
   <script src="{{ asset('admin_assets/js/sb-admin-2.min.js') }}"></script>
   <script src="{{ asset('admin_assets/vendor/chart.js/Chart.min.js') }}"></script>
-
 </body>
 </html>

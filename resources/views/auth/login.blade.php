@@ -51,42 +51,33 @@
                     </div>
                   @endif
 
-                  <form action="{{ route('login.action') }}" method="POST" class="user">
-                    @csrf
+<form action="{{ route('login.action') }}" method="POST" class="user">
+  @csrf
 
-                    <!-- Email -->
-                    <div class="form-group">
-                      <input name="email" type="email" class="form-control form-control-user"
-                        id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..."
-                        value="{{ old('email') }}">
-                      @error('email')
-                        <small class="text-danger">{{ $message }}</small>
-                      @enderror
-                    </div>
+  <!-- Email -->
+  <div class="form-group">
+    <input name="email" type="email" class="form-control form-control-user"
+      id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..."
+      value="{{ old('email') }}">
+    @error('email')
+      <small class="text-danger">{{ $message }}</small>
+    @enderror
+  </div>
 
-                    <!-- Password -->
-                    <div class="form-group">
-                      <input name="password" type="password" class="form-control form-control-user"
-                        id="exampleInputPassword" placeholder="Password">
-                      @error('password')
-                        <small class="text-danger">{{ $message }}</small>
-                      @enderror
-                    </div>
+  <!-- Password -->
+  <div class="form-group">
+    <input name="password" type="password" class="form-control form-control-user"
+      id="exampleInputPassword" placeholder="Password">
+    @error('password')
+      <small class="text-danger">{{ $message }}</small>
+    @enderror
+  </div>
 
-                    <!-- Remember Me -->
-                    <div class="form-group">
-                      <div class="custom-control custom-checkbox small">
-                        <input name="remember" type="checkbox" class="custom-control-input" id="customCheck"
-                          {{ old('remember') ? 'checked' : '' }}>
-                        <label class="custom-control-label" for="customCheck">Remember Me</label>
-                      </div>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn btn-primary btn-user btn-block">
-                      Login
-                    </button>
-                  </form>
+  <!-- Submit Button -->
+  <button type="submit" class="btn btn-primary btn-user btn-block">
+    Login
+  </button>
+</form>
 
                   <hr>
                   <div class="text-center">

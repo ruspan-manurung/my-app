@@ -12,4 +12,10 @@ class DashboardController extends Controller
         $meetings = Product::latest()->take(5)->get(); // ambil 5 meeting terakhir
         return view('dashboard', compact('meetings'));
     }
+
+    public function __construct()
+{
+    $this->middleware('auth');
+}
+
 }

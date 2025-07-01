@@ -1,4 +1,4 @@
-@extends('layouts.app')
+<!-- @extends('layouts.app')
 
 @section('title', 'Create Meeting')
 
@@ -30,4 +30,4 @@
             </div>
         </div>
     </form>
-@endsection
+@endsection -->

@@ -13,7 +13,7 @@
   </button>
 
   <!-- Topbar Search -->
-  <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+  <!-- <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
     <div class="input-group">
       <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
       <div class="input-group-append">
@@ -22,12 +22,12 @@
         </button>
       </div>
     </div>
-  </form>
+  </form> -->
 
   <!-- Topbar Navbar -->
   <ul class="navbar-nav ml-auto">
 
-    <!-- Search Dropdown (Visible Only XS) -->
+    <!-- Search Dropdown (Visible Only XS)
     <li class="nav-item dropdown no-arrow d-sm-none">
       <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown">
         <i class="fas fa-search fa-fw"></i>
@@ -44,18 +44,18 @@
           </div>
         </form>
       </div>
-    </li>
+    </li> -->
 
     <!-- Alerts -->
-    <li class="nav-item dropdown no-arrow mx-1">
+    <!-- <li class="nav-item dropdown no-arrow mx-1">
       <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown">
         <i class="fas fa-bell fa-fw"></i>
         <span class="badge badge-danger badge-counter">3+</span>
       </a>
       <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-        <h6 class="dropdown-header">Alerts Center</h6>
+        <h6 class="dropdown-header">Alerts Center</h6> -->
         <!-- Sample Alert Item -->
-        <a class="dropdown-item d-flex align-items-center" href="#">
+        <!-- <a class="dropdown-item d-flex align-items-center" href="#">
           <div class="mr-3">
             <div class="icon-circle bg-primary">
               <i class="fas fa-file-alt text-white"></i>
@@ -68,18 +68,18 @@
         </a>
         <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
       </div>
-    </li>
+    </li> -->
 
     <!-- Messages -->
-    <li class="nav-item dropdown no-arrow mx-1">
+    <!-- <li class="nav-item dropdown no-arrow mx-1">
       <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown">
         <i class="fas fa-envelope fa-fw"></i>
         <span class="badge badge-danger badge-counter">7</span>
       </a>
       <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
-        <h6 class="dropdown-header">Message Center</h6>
+        <h6 class="dropdown-header">Message Center</h6> -->
         <!-- Sample Message Item -->
-        <a class="dropdown-item d-flex align-items-center" href="#">
+        <!-- <a class="dropdown-item d-flex align-items-center" href="#">
           <div class="dropdown-list-image mr-3">
             <img class="rounded-circle" src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_profile_1.svg" alt="">
             <div class="status-indicator bg-success"></div>
@@ -91,10 +91,10 @@
         </a>
         <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
       </div>
-    </li>
+    </li> -->
 
     <!-- Divider -->
-    <div class="topbar-divider d-none d-sm-block"></div>
+    <!-- <div class="topbar-divider d-none d-sm-block"></div> -->
 
     <!-- User Info -->
     <li class="nav-item dropdown no-arrow">

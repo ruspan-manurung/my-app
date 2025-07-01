@@ -1,4 +1,4 @@
-@extends('layouts.app')
+<!-- @extends('layouts.app')
   
 @section('title', 'Show Product')
   
@@ -35,4 +35,4 @@
             <input type="text" name="updated_at" class="form-control" placeholder="Updated At" value="{{ $product->updated_at }}" readonly>
         </div>
     </div>
-@endsection
+@endsection -->

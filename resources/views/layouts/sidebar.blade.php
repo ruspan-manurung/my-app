@@ -31,7 +31,7 @@
   <li class="nav-item {{ request()->routeIs('products') ? 'active' : '' }}">
     <a class="nav-link" href="{{ route('products') }}">
       <i class="fas fa-fw fa-box"></i>
-      <span>Product</span>
+      <span>View</span>
     </a>
   </li>
 
